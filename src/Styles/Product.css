@@ -1,0 +1,15 @@
+.product-box{
+    height: 260px;
+    width: 120px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.product-picture{
+    height:120px;
+    width: 110px;
+}
+.product-box:hover{
+
+}

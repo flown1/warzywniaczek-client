@@ -15,7 +15,7 @@ export default class ListOfProducts extends React.Component {
         return(
             <Product name="Carrot"
                      price='123.12'
-                     imgUrl="asdas"
+                     imgUrl="https://media.mercola.com/assets/images/foodfacts/carrot-nutrition-facts.jpg"
             />
         )
     }
