@@ -1,15 +1,86 @@
 .product-box{
-    height: 260px;
-    width: 120px;
+    height: 400px;
+    width: 300px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    border-radius: 2px;
+    border-radius: 3px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
-.product-picture{
-    height:120px;
-    width: 110px;
+.box-top{
+    height: 67%;
 }
-.product-box:hover{
+.product-picture{
+    height:200px;
+    width: 300px;
+}
+.product-price{
+    color:  hsla(0, 0%, 0%, 0.788);
+}
+hr{
+    width: 80%;
+}
+.add-to-cart-btn{
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    background-color: hsla(0, 91%, 42%, 0.849);
+    color: #dfdfdf;
+    padding-top: 5px;
+}
+.add-to-cart-btn:hover{
+    animation: focusButton;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+
+    cursor: pointer;
+}
+@keyframes focusButton{
+    0%{
+        box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+        
+    }100%{
+        box-shadow: 0 2px 3px 0 hsla(0, 0%, 0%, 0.2);
+        width: 105px;
+        height: 26.25px;
+        color: #fff;
+    }
+}
+.add-to-cart-btn:active{
+    animation: btnClickEffect;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 
 }
+@keyframes btnClickEffect{
+    0%{
+        background: radial-gradient(hsla(0, 91%, 42%, 0.849), hsla(0, 91%, 42%, 0.849));
+    }100%{
+        background: radial-gradient(hsla(0, 91%, 42%, 0.849),hsla(0, 92%, 42%, 0.534)));
+    }
+}
+.product-box:hover{
+    animation-name: focusBox;
+    animation-duration: 0.5s;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes focusBox{
+    0%{
+        box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    }100%{
+        box-shadow: 0 6px 10px 0 hsla(0, 0%, 0%, 0.2);
+    }
+}
+
