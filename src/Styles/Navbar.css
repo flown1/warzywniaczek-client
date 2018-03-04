@@ -2,6 +2,7 @@
     top: 0;
     width: 96%;
     text-align: center;
+    justify-content: space-between;
     margin:auto;
     border-bottom: solid 1px;
     border-bottom-color: rgba(0, 40, 70, 0.2);
@@ -30,14 +31,26 @@
     text-decoration: none;
     color: rgba(0, 19, 34, 0.5);
 }
+.menu-tabs{
+    display:flex;
+
+}
 .App-header{
     display: flex;
 }
 header{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    margin: 0 15px;
 }
 .top-menu-button:hover{
     color: rgba(0, 19, 34, 0.89);
+}
+.user-box{
+    display:flex;
+    float:right;
+    padding-top: 28px;
+}
+.user-box > div{
+    padding-left: 10px;
+    cursor: pointer;
 }
