@@ -54,3 +54,15 @@ header{
     padding-left: 10px;
     cursor: pointer;
 }
+.cart{
+    display: flex;
+}
+.cart-counter{
+    background-color: rgba(228, 8, 0, 0.733);
+    border-radius: 50%;
+    height: 20px;
+    width: 21px;
+    margin-left: 5px;
+    padding-top: 3px;
+    color: #fdfdfd;
+}

@@ -9,13 +9,13 @@ const Navbar = () => {
         <nav id="top-menu">
             <header className="App-header">
                 <h1 className="App-title">Grocery Store</h1>
-                <div class='side-box'>Do Grocery<br/>Online</div>
+                <div className='side-box'>Do Grocery<br/>Online</div>
             </header>
-            <div class="menu-tabs">
-                <a href="#" class="top-menu-button"><h3>Shopping</h3></a>
-                <a href="#" class="top-menu-button"><h3>About us</h3></a>
+            <div className="menu-tabs">
+                <a href="#" className="top-menu-button"><h3>Shopping</h3></a>
+                <a href="#" className="top-menu-button"><h3>About us</h3></a>
             </div>
-            <div class="user-box">
+            <div className="user-box">
                 <Cart />
                 <Login />
             </div>

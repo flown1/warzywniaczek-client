@@ -14,15 +14,15 @@ export default class Login extends React.Component{
     render(){
         if(!this.state.isLoggedIn){
             return(
-                <div class="user">
-                    <i class="fas fa-user"></i>
+                <div className="user">
+                    <i className="fas fa-user"></i>
                     Login
                 </div>
             )
         }else{
             return(
-                <div class="user">
-                    <i class="fas fa-user"></i>
+                <div className="user">
+                    <i className="fas fa-user"></i>
                     Hello, {this.state.user.name} {this.state.user.lastname}
                 </div>
             )

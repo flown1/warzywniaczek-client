@@ -9,9 +9,9 @@ export default class Cart extends React.Component{
     }
     render(){
         return(
-            <div class="cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    Cart: {this.state.products.length}
+            <div className="cart">
+                    <i className="fas fa-shopping-cart"></i>
+                    Cart: <div className="cart-counter">{this.state.products.length}</div>
             </div>
         )
     }

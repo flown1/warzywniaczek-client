@@ -10,7 +10,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <ListOfProducts/>
+        <div className="flex-wrapper list-of-products-wrapper">
+          <ListOfProducts/>
+        </div>
       </div>
     );
   }

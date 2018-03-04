@@ -3,15 +3,15 @@ import '../Styles/Product.css';
 
 const Product = ({name, price, imgUrl}) => {
     return(
-        <div class="product-box">
-            <div class="box-top">
-                <img src={imgUrl} class="product-picture" />
-                <h2 class='product-name'>{name}</h2>
+        <div className="product-box">
+            <div className="box-top">
+                <img src={imgUrl} className="product-picture" />
+                <h2 className='product-name'>{name}</h2>
             </div>
             <hr/>
-            <div class="product-bottom">
-                <h3 class='product-price'>${price}</h3> 
-                <div class="add-to-cart-btn">Buy</div>
+            <div className="product-bottom">
+                <h3 className='product-price'>${price}</h3> 
+                <div className="add-to-cart-btn">Buy</div>
             </div>
         </div>
     )
