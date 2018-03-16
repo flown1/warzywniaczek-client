@@ -1,38 +1,39 @@
 import React from 'react'
 import Product from './Product'
+import { connect } from 'react-redux'
 
-export default class ListOfProducts extends React.Component {
-    constructor(){
-        super()
-        this.state = {
-            products: [{
-                id:    0,
-                name: 'Carrot',
-                price: '123.12',
-                imgUrl: "https://media.mercola.com/assets/images/foodfacts/carrot-nutrition-facts.jpg"
-            },{
-                id:    0,
-                name: 'Beetroot',
-                price: '64',
-                imgUrl: "http://countryfruit.uy/238-thickbox_default/remolacha.jpg"
-            }]
-        }
+class ListOfProducts extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {}
     }
-    componentDidMount(){
-        //fetch for products
+    shouldComponentUpdate(prev, next){
+        console.log(prev);
+        console.log(next);
     }
     render(){
         return(
-            this.state.products.map( (p) => {
+            this.props.products.map( (p) => {
                 return (
-                    <Product key={p.key}
+                    <Product key={p.id}
                             name={p.name}
                             price={p.price}
                             imgUrl={p.imgUrl}
                     />
+                    // <div>{this.props.info}</div>
                 );
             })
-        );
-           
+        );     
     }
 }
+
+const mapStateToProps = (state) => {
+    console.log(state.info);
+    return{
+        info: state.info,
+        products: state.products
+    };
+  };
+  
+  export default connect(mapStateToProps)(ListOfProducts);
+  

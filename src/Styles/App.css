@@ -6,6 +6,6 @@
 }
 .list-of-products-wrapper{
   margin: 15px 40px;
-  justify-content: center;
+  justify-content: left;
   flex-flow: row wrap;
 }
